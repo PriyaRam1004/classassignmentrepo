@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="tests" name="LibrarySuit">
+  <test name="Smoke">
+  <parameter name="Url" value="https://login.salesforce.com"></parameter>
+  <parameter name="id" value="priyadharshini10041993@gmail.com"></parameter>
+   <parameter name="pwd" value="Priya@1004"></parameter>
+     <classes>
+      <class name="switchtoSalesforceLibrary.AssetLibrary"/>
+    </classes>
+   </test>
+   <test name="Sanity">
+    <parameter name="Url" value="https://login.salesforce.com"></parameter>
+     <parameter name="id" value=" gokul.sekar@testleaf.com"></parameter>
+     <parameter name="pwd" value="Leaf$123"></parameter>
+    
+    <classes>
+      <class name="switchtoSalesforceLibrary.AssetLibrary"/>
+    </classes>
+     </test>
+   <!-- Test -->
+</suite> <!-- Suite -->
